@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.5748249, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -284,6 +284,106 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &206661850
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1856430728}
+    m_Modifications:
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4b760d4024bad4844b1905a009fc2d57, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &292492997
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,26 +979,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd961b1c9541a4cee99686069ecce852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initializeOnStart: 1
   _options:
     locationOptions:
       latitudeLongitude: 37.784179, -122.401583
       zoom: 16
     extentOptions:
       extentType: 0
-      cameraBoundsOptions:
-        camera: {fileID: 0}
-        visibleBuffer: 0
-        disposeBuffer: 0
-      rangeAroundCenterOptions:
-        west: 1
-        north: 1
-        east: 1
-        south: 1
-      rangeAroundTransformOptions:
-        targetTransform: {fileID: 0}
-        visibleBuffer: 0
-        disposeBuffer: 0
+      defaultExtents:
+        cameraBoundsOptions:
+          camera: {fileID: 0}
+          visibleBuffer: 0
+          disposeBuffer: 0
+        rangeAroundCenterOptions:
+          west: 1
+          north: 1
+          east: 1
+          south: 1
+        rangeAroundTransformOptions:
+          targetTransform: {fileID: 0}
+          visibleBuffer: 0
+          disposeBuffer: 0
     placementOptions:
       placementType: 1
       snapMapToZero: 1
@@ -907,6 +1007,7 @@ MonoBehaviour:
       unityTileSize: 100
     loadingTexture: {fileID: 2800000, guid: e2896a92727704803a9c422b043eae89, type: 3}
     tileMaterial: {fileID: 2100000, guid: b9f23e9bce724fa4daac57ecded470b8, type: 2}
+  _initializeOnStart: 1
   _imagery:
     _layerProperty:
       sourceType: 1
@@ -933,8 +1034,9 @@ MonoBehaviour:
           UserName: 
       elevationLayerType: 1
       requiredOptions:
-        addCollider: 0
         exaggerationFactor: 1
+      colliderOptions:
+        addCollider: 0
       modificationOptions:
         sampleCount: 10
         useRelativeHeight: 0
@@ -999,7 +1101,8 @@ MonoBehaviour:
           layerName: building
           snapToTerrain: 1
           combineMeshes: 0
-          lineWidth: 1
+        lineGeometryOptions:
+          Width: 1
         filterOptions:
           _selectedLayerName: building
           filters: []
@@ -1030,6 +1133,15 @@ MonoBehaviour:
           samplePalettes: 0
           colorPalette: {fileID: 11400000, guid: 57bdfa37edf7a4f7f999d19443497554,
             type: 2}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 0}
+            - Materials:
+              - {fileID: 0}
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
         performanceOptions:
           isEnabled: 1
           entityPerCoroutine: 20
@@ -1050,7 +1162,8 @@ MonoBehaviour:
           layerName: 
           snapToTerrain: 1
           combineMeshes: 0
-          lineWidth: 0
+        lineGeometryOptions:
+          Width: 1
         filterOptions:
           _selectedLayerName: 
           filters: []
@@ -1076,6 +1189,15 @@ MonoBehaviour:
           colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
           samplePalettes: 0
           colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 0}
+            - Materials:
+              - {fileID: 0}
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
         performanceOptions:
           isEnabled: 1
           entityPerCoroutine: 20
@@ -1104,7 +1226,8 @@ MonoBehaviour:
           layerName: 
           snapToTerrain: 1
           combineMeshes: 0
-          lineWidth: 0
+        lineGeometryOptions:
+          Width: 1
         filterOptions:
           _selectedLayerName: 
           filters: []
@@ -1130,6 +1253,15 @@ MonoBehaviour:
           colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
           samplePalettes: 0
           colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 0}
+            - Materials:
+              - {fileID: 0}
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
         performanceOptions:
           isEnabled: 1
           entityPerCoroutine: 20
@@ -1158,7 +1290,8 @@ MonoBehaviour:
           layerName: 
           snapToTerrain: 1
           combineMeshes: 0
-          lineWidth: 0
+        lineGeometryOptions:
+          Width: 1
         filterOptions:
           _selectedLayerName: 
           filters: []
@@ -1184,6 +1317,15 @@ MonoBehaviour:
           colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
           samplePalettes: 0
           colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 0}
+            - Materials:
+              - {fileID: 0}
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
         performanceOptions:
           isEnabled: 1
           entityPerCoroutine: 20
@@ -1212,7 +1354,8 @@ MonoBehaviour:
           layerName: 
           snapToTerrain: 1
           combineMeshes: 0
-          lineWidth: 0
+        lineGeometryOptions:
+          Width: 1
         filterOptions:
           _selectedLayerName: 
           filters: []
@@ -1238,6 +1381,15 @@ MonoBehaviour:
           colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
           samplePalettes: 0
           colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 0}
+            - Materials:
+              - {fileID: 0}
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
         performanceOptions:
           isEnabled: 1
           entityPerCoroutine: 20
@@ -1266,7 +1418,8 @@ MonoBehaviour:
           layerName: 
           snapToTerrain: 1
           combineMeshes: 0
-          lineWidth: 0
+        lineGeometryOptions:
+          Width: 1
         filterOptions:
           _selectedLayerName: 
           filters: []
@@ -1292,6 +1445,15 @@ MonoBehaviour:
           colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
           samplePalettes: 0
           colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 0}
+            - Materials:
+              - {fileID: 0}
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
         performanceOptions:
           isEnabled: 1
           entityPerCoroutine: 20
@@ -1320,7 +1482,8 @@ MonoBehaviour:
           layerName: 
           snapToTerrain: 1
           combineMeshes: 0
-          lineWidth: 0
+        lineGeometryOptions:
+          Width: 1
         filterOptions:
           _selectedLayerName: 
           filters: []
@@ -1346,6 +1509,15 @@ MonoBehaviour:
           colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
           samplePalettes: 0
           colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 0}
+            - Materials:
+              - {fileID: 0}
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
         performanceOptions:
           isEnabled: 1
           entityPerCoroutine: 20
@@ -1374,7 +1546,8 @@ MonoBehaviour:
           layerName: 
           snapToTerrain: 1
           combineMeshes: 0
-          lineWidth: 0
+        lineGeometryOptions:
+          Width: 1
         filterOptions:
           _selectedLayerName: 
           filters: []
@@ -1400,6 +1573,15 @@ MonoBehaviour:
           colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
           samplePalettes: 0
           colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 0}
+            - Materials:
+              - {fileID: 0}
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
         performanceOptions:
           isEnabled: 1
           entityPerCoroutine: 20
@@ -1428,7 +1610,8 @@ MonoBehaviour:
           layerName: 
           snapToTerrain: 1
           combineMeshes: 0
-          lineWidth: 0
+        lineGeometryOptions:
+          Width: 1
         filterOptions:
           _selectedLayerName: 
           filters: []
@@ -1454,6 +1637,15 @@ MonoBehaviour:
           colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
           samplePalettes: 0
           colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials:
+            - Materials:
+              - {fileID: 0}
+            - Materials:
+              - {fileID: 0}
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
         performanceOptions:
           isEnabled: 1
           entityPerCoroutine: 20
@@ -1654,84 +1846,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -11}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1077699859
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1452734211165118, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1077699860}
-  - component: {fileID: 1077699862}
-  - component: {fileID: 1077699861}
-  m_Layer: 5
-  m_Name: SearchText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1077699860
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224120818998345342, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1077699859}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1435841542}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -10, y: -4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1077699861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114608658907116364, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1077699859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 218956a5c2a6e42d6a60afccf80b002b, type: 3}
-    m_FontSize: 10
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 8
-    m_MaxSize: 10
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &1077699862
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222195337741236042, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1077699859}
 --- !u!1 &1185540384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,169 +2022,17 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1301353179}
---- !u!1 &1435841541
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1414859872329428, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1435841542}
-  - component: {fileID: 1435841545}
-  - component: {fileID: 1435841544}
-  - component: {fileID: 1435841543}
-  - component: {fileID: 1435841546}
-  m_Layer: 5
-  m_Name: UserInput
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1435841542
+--- !u!224 &1435841542 stripped
 RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224048572454037920, guid: 00f5bf1ff996842fc82384f8f686fda6,
+  m_PrefabParentObject: {fileID: 224011081101410242, guid: 4b760d4024bad4844b1905a009fc2d57,
     type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1435841541}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1705615811}
-  - {fileID: 1077699860}
-  m_Father: {fileID: 1856430728}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.25, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1435841543
+  m_PrefabInternal: {fileID: 206661850}
+--- !u!114 &1435841546 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114711793206807384, guid: 00f5bf1ff996842fc82384f8f686fda6,
+  m_PrefabParentObject: {fileID: 114024412958142500, guid: 4b760d4024bad4844b1905a009fc2d57,
     type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1435841541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 575553740, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1435841544}
-  m_TextComponent: {fileID: 1077699861}
-  m_Placeholder: {fileID: 1705615812}
-  m_ContentType: 0
-  m_InputType: 0
-  m_AsteriskChar: 42
-  m_KeyboardType: 0
-  m_LineType: 0
-  m_HideMobileInput: 0
-  m_CharacterValidation: 0
-  m_CharacterLimit: 0
-  m_OnEndEdit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ForwardGeocoder
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_CustomCaretColor: 0
-  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
-  m_CaretBlinkRate: 0.85
-  m_CaretWidth: 1
-  m_ReadOnly: 0
---- !u!114 &1435841544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114431620286575106, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1435841541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1435841545
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222386617050530544, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1435841541}
---- !u!114 &1435841546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114850405259029928, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1435841541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabInternal: {fileID: 206661850}
   m_Script: {fileID: 11500000, guid: 9bce9ff37f5964623a657f4003af54f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1681481099
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,84 +2152,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
---- !u!1 &1705615810
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1309470221448190, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1705615811}
-  - component: {fileID: 1705615813}
-  - component: {fileID: 1705615812}
-  m_Layer: 5
-  m_Name: Placeholder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1705615811
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224333804213914554, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1705615810}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1435841542}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -10, y: -4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1705615812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114620971063286122, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1705615810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 218956a5c2a6e42d6a60afccf80b002b, type: 3}
-    m_FontSize: 10
-    m_FontStyle: 2
-    m_BestFit: 1
-    m_MinSize: 8
-    m_MaxSize: 10
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 0
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Enter your location
---- !u!222 &1705615813
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222294672724154868, guid: 00f5bf1ff996842fc82384f8f686fda6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1705615810}
 --- !u!1 &1780367436
 GameObject:
   m_ObjectHideFlags: 0

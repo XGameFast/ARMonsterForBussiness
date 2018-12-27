@@ -7,8 +7,6 @@ public class NetRequestData  {
 
 
 }
-
-
 public class baseIn
 {
     public string token{get;set;}
@@ -50,7 +48,13 @@ public class Result
     public string detail { get; set; }
 
 }
-
+/// <summary>
+/// 商家的活动回调
+/// </summary>
+public class BusinessActivityRequest : Result
+{
+    public BusinessActivity data { get; set; }
+}
 
 public class BusinessCouponRequest : Result
 {

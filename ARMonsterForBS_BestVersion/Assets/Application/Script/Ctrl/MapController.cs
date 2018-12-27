@@ -6,6 +6,7 @@ using Mapbox.Utils;
 using System.Linq;
 using UnityEngine.EventSystems;
 using Mapbox.Unity.Utilities;
+using Mapbox.Geocoding;
 
 public class MapController : BaseController {
     private MapCtrlData mapCtrlData;
@@ -39,10 +40,15 @@ public class MapController : BaseController {
         List<double>tt = new List<double> { mapCtrlData.curMapCenterPose [0] , mapCtrlData.curMapCenterPose [1]};
         //X = 121,  Y  = 28
         CallServerGetLocationStronghold(tt);
+
+        mapCtrlData.getMapView.CallbackSearchLatLon = SeartPOI;
+
+      //  mapCtrlData.getMapView.forwardGeocodeUser.OnGeocoderResponse += ForwardGeocoder_OnGeocoderResponse;
     }
 
     public override void EndCtrl()
     {
+       // mapCtrlData.getMapView.forwardGeocodeUser.OnGeocoderResponse -= ForwardGeocoder_OnGeocoderResponse;
         OpenView(false);
         base.EndCtrl();
     }
@@ -63,6 +69,10 @@ public class MapController : BaseController {
     }
     #endregion 
 
+
+
+
+
     #region 打开界面
     private void OpenView(bool isOpen = true)
     {
@@ -78,11 +88,31 @@ public class MapController : BaseController {
     #endregion
 
     #region 获取周边的数据
-    
+
     private void CallServerGetLocationStronghold(List<double> pose)
     {
         mapCtrlData.isEndBuildMap = false;
         AndaDataManager.Instance.GetLocationRangeInfo(pose, FinishGetLocationData);
+    }
+
+    private void SeartPOI(List<double> pose)
+    {
+        mapCtrlData.curMapCenterPose = pose;
+        map.UpdateMap(mapCtrlData.curMapCenterV2d);
+        List<double> tt = new List<double> { mapCtrlData.curMapCenterPose[0], mapCtrlData.curMapCenterPose[1] };
+
+        /*GameObject item = AndaDataManager.Instance.GetItemInfoPrefab("ItemInfo_NewSHItem");
+        item = Instantiate(item);
+        item.transform.parent = mapCtrlData.getMapView.transform;
+        item.transform.localScale = Vector3.one;
+        item.transform.localPosition = Vector3.zero;
+        Vector3 vector3 = map.GeoToWorldPosition(new Vector2d(pose[0], pose[1]));
+        Vector2 vector2 = mapCamera.WorldToScreenPoint(vector3);
+        Vector3 p = UICamera.ScreenToWorldPoint(new Vector3(vector2.x, vector2.y, 90));
+        item.transform.position = p;*/
+
+
+        CallServerGetLocationStronghold(tt);
     }
 
     #endregion

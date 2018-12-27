@@ -6,6 +6,15 @@ public class StrongholdStructure {
 
 }
 
+
+public class BusinessActivity
+{
+    public int activityIndex { get; set; }
+    public int hostInedex { get; set; }
+    public string activeDescription { get; set; }
+    public string activeURL { get; set; }
+}
+
 public class StrongholdBaseConfigAttribute
 {
     public int strongholdID { get; set; }

@@ -45,6 +45,7 @@ public class BusinessData : UserBaseData
 {
     public List<BusinessStrongholdGrowUpAttribute> strongholdList { get; set; }
     public List<BussinessRewardStruct> businessCoupons { get; set; }
+    public List<BusinessActivity> ActiveData { get; set; }
 }
 
 public class BussinessRewardStruct
@@ -92,4 +93,26 @@ public class PlayerCoupon
     public int expirationDate { get; set; }
     public int createTime { get; set; }
     public BusinessCouponRequest coupon { get; set; }
+}
+
+
+public class BaiduSearRequest
+{
+    public int status { get; set; }
+    public BaiduSearchResult result { get; set; }
+
+}
+public class BaiduSearchResult
+{
+    public BaiduLocation location {get;set;}
+    public int precise{get;set;}
+    public int confidence {get;set;}
+    public int comprehension {get;set;}
+    public string level {get;set;}
+}
+
+public class BaiduLocation
+{
+    public double lng { get; set; }
+    public double lat { get; set; }
 }

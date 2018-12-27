@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Mapbox.Examples;
+using Mapbox.Geocoding;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class MapView : ViewBasic {
 
     public Transform  infoBoard;
@@ -27,6 +29,12 @@ public class MapView : ViewBasic {
 
     public GiftEditionBar giftEditionBar;
 
+    public ForwardGeocodeUserInput forwardGeocodeUser;
+
+    public InputField searchInput;
+
+    public System.Action<List<double>> CallbackSearchLatLon;
+
     public override void StartView()
     {
         base.StartView();
@@ -43,6 +51,41 @@ public class MapView : ViewBasic {
     }
 
     #region 玩家取消在这里建造据点
+
+    public void EndSearch()
+    {
+        StartCoroutine(Search());
+    }
+
+    private IEnumerator Search()
+    {
+
+       // string str = "http://api.map.baidu.com/geocoder/v2/?address=" + searchInput.text + "&output=json&ak=oYxD4BBco8pLKQpgZjqZh3zNykVhZLz&callback=showLocation"; //GET请求
+
+        string str2 = "http://api.map.baidu.com/geocoder/v2/?address=" + searchInput.text+ "&output=json&ak=YoYxD4BBco8pLKQpgZjqZh3zNykVhZLz&callback=showLocation";
+
+       //string path = "http://api.map.baidu.com/place/v2/search?ak=oYxD4BBco8pLKQpgZjqZh3zNykVhZLz"+"&region="+searchInput.text + "&output=json"+"&";
+       WWW wWW = new WWW(str2);
+       yield return wWW;
+       Debug.Log(wWW.text);
+        if (string.IsNullOrEmpty(wWW.error))
+        {
+            //showLocation && showLocation(
+         
+            int startIndex =27;
+            int length = wWW.text.Length - startIndex -1;
+            string t = wWW.text.Substring(startIndex, length);
+             BaiduSearRequest baiduSearRequest = LitJson.JsonMapper.ToObject<BaiduSearRequest>(t);
+
+            double[] db = ConvertTool.BD09ToGCJ02(baiduSearRequest.result.location.lat, baiduSearRequest.result.location.lng);
+            db = ConvertTool.GCJ02ToWGS84(db[0], db[1]);
+
+            CallbackSearchLatLon(new List<double> { db[0], db [1]});
+        }
+       
+
+    }
+
 
     public void CancelAddNewItem()
     {
